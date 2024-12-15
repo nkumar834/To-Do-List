@@ -1,0 +1,126 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+}
+
+.form-container {
+    flex: 1;
+    padding: 20px;
+    border-right: 2px solid #e0e0e0;
+}
+
+.task-list-container {
+    flex: 2;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #6a11cb;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #6a11cb;
+    border-radius: 8px;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5a0fab;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #6a11cb;
+    color: white;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+button.action-btn {
+    padding: 6px 10px;
+    margin-right: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.status-btn {
+    background-color: #28a745;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: black;
+}
+
+button.action-btn:hover {
+    opacity: 0.9;
+}
+
